@@ -1,34 +1,72 @@
 /* место для вашего кода */
-.header__logo{
-    display: block;
+.body{
+    border: 1px solid black;
+}
+.header{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 92px;
+    padding-bottom: 96px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;   
+    border: 1px solid black;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+.header__nav{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    
+}
+
+.header__nav__menu{
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav__menu__item{
+    padding-right: 31px;
+    letter-spacing: 0.01em;
+    list-style: circle;   
+}
+
+.header__nav__menu__item__first{
+    padding-right: 31px;
+    letter-spacing: 0.01em;
+    list-style: none;   
+}
+
+
+.header__nav__menu__item__active-link {
+   
+    text-decoration: none; 
+}
+
+.header__logo{    
+    
     width: 148px;
 }
 
 .header__logo__image{
+    display: flex;
     width: 100%;
     
-}
-
-.header__nav{
-   
-
-}
-
-.header__nav__menu{
-    list-style: circle;
-    display: flex;
-    
     
 }
 
-.header__nav__menu__item{
-   
-    padding-right: 31px;
-    
+.header__address{   
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    line-height: 135%;
+    justify-content: center;
+    padding-left: 184px;
 }
 
-.header__nav__menu__item-item{
-   
-    text-decoration: none;
-    
+.cover{
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
