@@ -2,7 +2,7 @@
 .header {
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 104px;
+    padding-top: 94px;
     padding-bottom: 96px;
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
@@ -318,7 +318,7 @@
     content: "";
     margin: 8em;
     display: block;
-    font-size: 19%;
+    font-size: 18%;
 }
 
 .about__content__annotation {
