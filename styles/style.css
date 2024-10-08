@@ -75,8 +75,7 @@
     width: 100%;
 }
 
-.cover__title
-{
+.cover__title {
     font-weight: 700;
     font-size: 100px;
     line-height: 100%;
@@ -148,7 +147,7 @@
     position: relative;
 }
 
-.lots__heading { 
+.lots__heading {
 padding-left: 40px;
 font-weight: 700;
 font-size: 40px;
@@ -257,7 +256,7 @@ color: #000;
 .about__logo__image {
     width:148px;
 }
-.about__title{
+.about__title {
     margin-top: 136px;
     padding-left: 10px;
     padding-bottom: 110px;
@@ -279,8 +278,7 @@ color: #000;
     color: #000;
     padding-left: 10px;
 }
-.footer__main
-{
+.footer__main {
     display:flex;
     justify-content: space-between;
     padding-left: 50px;
