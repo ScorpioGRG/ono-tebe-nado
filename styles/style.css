@@ -99,14 +99,14 @@
 }
 
 .cover__heading__special__hight__space {
-    line-height: 118%; /*115*/
+    line-height: 118%; 
     letter-spacing: 0.25em;
 }
 
 .cover__heading__align__center {
     display: block;
     text-align: center;
-    line-height: 138%; /*140*/
+    line-height: 138%; 
 }
 
 .cover__heading__align__right {
