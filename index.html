@@ -12,26 +12,34 @@
   <body>
     <header class="header">
       <nav>
-          <ul class="horizontal__list">
-            <li class="unbullited__list_item"><a class="active__link" href="">главная</a></li>
-            <li class="header__nav__menu__item"><a class="interactive__link" href="">посмотреть лоты</a></li>
-            <li class="header__nav__menu__item"><a class="interactive__link" href="">об аукционе</a></li>
+          <ul class="inline__list">
+            <li class="unbullited__list_item">
+              <a class="active__link" href="">главная</a>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="interactive__link" href="">посмотреть лоты</a>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="interactive__link" href="">об аукционе</a>
+            </li>
           </ul>
       </nav>
       <a class="header__logo">
         <img class="header__logo__image" src="./images/logo-black.svg" alt="ОНО ТЕБЕ НАДО логотип черный"/>
       </a>
       <address class="header__address">
-        <a class="interactive__link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="interactive__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="reset__spacing"> наб. Принсенграхт 263- 265, Амстердам</p>
+        <a class="interactive__link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="interactive__link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
-	  <main>
+    <main>
       <section class="cover">
           <h1 class="cover__heading">
             <span class="cover__heading__special__hight__space cover__heading__main">о</span>
             <span class="cover__heading__main cover__heading__increase__space">но</span>
+            <!--Не знаю как разбить этого крокодила со вложенным span, что бы каждый новый span шел с новой строки. Как только начинаю переносить теги на новую строку - символ перевода строки ломает все. 
+            Пробовал разные типы display - либо результат один и тот-же, либо все совсем ломается.-->
             <span class="cover__heading__align__center cover__heading__main">те<span class="cover__heading__main cover__heading__increase__space">бе</span></span>
             <span class="cover__heading__align__right cover__heading__main cover__heading__increase__space">н<span class="cover__heading__main">ад<span class="reset__spacing">о</span></span></span>
           </h1>
@@ -45,7 +53,7 @@
         <h2 class="sub__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lot__list__item">
-            <a class="lot__link" href="#">
+            <a class="lot__link" target="_blank" href="#">
               <article class="lots__article">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Фильм режиссёра, который бросил киношколу</h3>
@@ -57,7 +65,7 @@
             </a>
           </li>
           <li class="lot__list__item">
-            <a class="lot__link" href="#">
+            <a class="lot__link" target="_blank" href="#">
               <article class="lots__article">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
@@ -69,11 +77,12 @@
             </a>
           </li>
           <li class="lot__list__item">
-            <a class="lot__link" href="#">
+            <a class="lot__link" target="_blank" href="#">
               <article class="lots__article">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                  <p class="lots_annotation">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span class="lots_annotation__increase_space">...</span> Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                  <!--тут тоже проблема - аналогичная заголовку как только переношу <span class="lots_annotation__increase_space">... </span> слово "Сколько" уползает либо у меня в самой концепции что то не так, но не пойму что, есть мысль, что так можно только когда display: inline-->
+                  <p class="lots_annotation">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span class="lots_annotation__increase_space">... </span>Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 </div>
                 <img class="lot_image" src="./images/card-lot-03.jpg" alt="Обложка лота: «Картина Черное и фиолетовое»">
                 <div class="overlay"></div>
@@ -81,6 +90,7 @@
             </a>
           </li>
         </ul>
+        <!--тут вопрос философический: ведут ли ссылки на внешние сайты? Но, ставя себя на место пользователя, мне больше нравится, когда ссылки открываются в новых вкладках-->
         <a class="lots__list__more interactive__link" target="_blank" href="#">посмотреть больше</a>
       </section>
       <section class="about">
@@ -91,38 +101,70 @@
           <h2 class="sub__heading about__title">
             Об аукционе
           </h2>
-          <p class="about__content">
-           Здесь вы не встретите очередное<span class="reset__spacing"> пафосное собрание невероятно дорогого антиквариата. </span><span class="about__content__increase__spacing">Наши</span> лоты вообще не <span class="reset__spacing">должны</span> <span class="about__content__decrease__spacing">были попасть </span><span class="reset__spacing">ни на один </span>аукцион.<span class="reset__spacing"> Потому что кому нужен </span><span class="about__content__more__increase__spacing">дневник</span> <span class="reset__spacing">девочки-подростка или картина, которую может </span><span class="about__content__increase__spacing">нарисовать</span> <span class="reset__spacing">даже ребёнок? Кому нужны </span>все эти странные вещи, созданные <span class="reset__spacing">любителями?</span>
+          <!--как работать с оформлением типа <тэг1>_много_текста_<тег2>_много_текста_</тег2>_много_текста_</тег1> (со вложенными тегами внутри цельного абзаца текста) в пдф с рекомендациями нет-->
+          <!---тут без проблем переносы тегов на новые строки сработали - пока у меня одно объяснение: так можно делать пока display inline, как только тип меняется переводы строк 
+          внутри текста становятся видны в разметке, вновь вопрос по правилам оформления вложенных тегов внутри сплошного текста или хуже - цельного слова, является ли это исключением из общих
+          правил, стоит сменить тип display и текст в блоке ниже "разъедется"-->
+          <p class="about__content content__increase__spacing">
+            Здесь вы не встретите очередное
+            <span class="reset__spacing"> пафосное собрание невероятно дорогого антиквариата. </span>
+            <span class="about__content__increase__spacing">Наши</span>
+            лоты вообще не 
+            <span class="reset__spacing">должны</span>
+            <span class="about__content__decrease__spacing">были попасть </span>
+            <span class="reset__spacing">ни на один </span>
+            аукцион.
+            <span class="reset__spacing"> Потому что кому нужен </span>
+            <span class="about__content__more__increase__spacing">дневник</span>
+            <span class="reset__spacing">девочки-подростка или картина, которую может </span>
+            <span class="about__content__increase__spacing">нарисовать</span>
+            <span class="reset__spacing">даже ребёнок? Кому нужны </span>
+            все эти странные вещи, созданные
+            <span class="reset__spacing">любителями?</span>
           </p>
-            <br class="about__content__cr_space">
-          <p class="about__content__annotation">
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то <span class="about__content__annotation__more__increase__spacing">они</span> казались просто <span class="content__increase__spacing">неудачными.</span> Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно <span class="content__increase__spacing">представить современную культуру. </span>Когда в эти вещи не верил никто, продолжали верить <span class="content__increase__spacing">их создатели.</span> И сейчас эти лоты стали культовыми. 
+          <br class="about__content__cr_space">
+          <p class="about__content">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то
+            <span class="about__content__annotation__more__increase__spacing">они</span>
+            казались просто 
+            <span class="content__increase__spacing">неудачными.</span>
+            Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно 
+            <span class="content__increase__spacing">представить современную культуру. </span>
+            Когда в эти вещи не верил никто, продолжали верить 
+            <span class="content__increase__spacing">их создатели.</span>
+            И сейчас эти лоты стали культовыми.
           </p>
         </div>
       </section>
-	  </main>
+    </main>
     <footer class="footer__main">
       <address class="footer__address">
         <a class="interactive__link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
         <br>
         <a class="interactive__link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <br>наб. Принсенграхт 263-<br> 265, Амстердам
+        <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
       </address>
       <nav>
         <ul class="footer__nav__menu">
-          <li class="unbullited__list_item"><a class="active__link" href="#">главная</a></li>
-          <li class="unbullited__list_item"><a class="interactive__link" href="#">посмотреть лоты</a></li>
-          <li class="unbullited__list_item"><a class="interactive__link" href="#">об аукционе</a></li>
+          <li class="unbullited__list_item">
+            <a class="active__link" href="#">главная</a>
+          </li>
+          <li class="unbullited__list_item">
+            <a class="interactive__link" href="#">посмотреть лоты</a>
+          </li>
+          <li class="unbullited__list_item">
+            <a class="interactive__link" href="#">об аукционе</a>
+          </li>
         </ul>
       </nav>
-      <ul class="horizontal__list footer__list">
-        <li >
+      <ul class="inline__list footer__list">
+        <li>
           <a href="#" target="_blank"><img class="footer__social__media-ico" src="./images/yt.svg" alt="логотип YT"></a>
         </li>
-        <li >
+        <li>
           <a href="#" target="_blank"><img class="footer__social__media-ico" src="./images/vk.svg" alt="логотип VK"></a>
         </li>
-        <li >
+        <li>
           <a href="#" target="_blank"><img class="footer__social__media-ico" src="./images/pinterest.svg" alt="логотип PT"></a>
         </li>
       </ul>
