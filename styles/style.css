@@ -229,9 +229,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
-    
 }
 
 .lots_annotation {
@@ -240,8 +237,6 @@
     line-height: 120%;
     margin-bottom:48px;
     color: #fff;
-    
-    
 }
 
 .lots_annotation__increase_space {
