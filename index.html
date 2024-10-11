@@ -14,36 +14,34 @@
       <nav>
         <ul class="inline__list">
           <li class="unbullited__list_item">
-            <a class="active__link" href="">главная</a>
+            <a class="link link-active" href="">главная</a>
           </li>
           <li class="header__nav__menu__item">
-            <a class="interactive__link" href="">посмотреть лоты</a>
+            <a class="link" href="">посмотреть лоты</a>
           </li>
           <li class="header__nav__menu__item">
-            <a class="interactive__link" href="">об аукционе</a>
+            <a class="link" href="">об аукционе</a>
           </li>
         </ul>
       </nav>
       <a class="header__logo">
         <img class="header__logo__image" src="./images/logo-black.svg" alt="ОНО ТЕБЕ НАДО логотип черный"/>
       </a>
-      <address class="header__address">
-        <a class="interactive__link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="interactive__link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <address class="address header__address">
+        <a class="link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
         <h1 class="cover__heading">
-          <span class="cover__heading__special__hight__space cover__heading__main">о</span>
-          <span class="cover__heading__main cover__heading__increase__space">но</span>
-          <!--Не знаю как разбить этого крокодила со вложенным span, что бы каждый новый span шел с новой строки. Как только начинаю переносить теги на новую строку - символ перевода строки ломает все. 
-          Пробовал разные типы display - либо результат один и тот-же, либо все совсем ломается.-->
+          <span class="cover__heading__special__hight cover__heading__main">о<span class="cover__heading__main cover__heading__increase__space">но</span></span>
           <span class="cover__heading__align__center cover__heading__main">те<span class="cover__heading__main cover__heading__increase__space">бе</span></span>
           <span class="cover__heading__align__right cover__heading__main cover__heading__increase__space">н<span class="cover__heading__main">ад<span class="reset__spacing">о</span></span></span>
         </h1>
         <div class="cover__description">
+          <!--немного поспорю за этот span, в макете у буквы "в" другой letter-spacing не как у всей строки-->
           <p class="cover__description-text">Аукцион вещей, <span class="cover__description-text__increase__spacing">в</span>которые никто не верил</p>
           <button type="button" class="bet-button">Сделать ставку</button>
         </div>
@@ -53,45 +51,40 @@
         <h2 class="sub__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lot__list__item">
-            <a class="lot__link" target="_blank" href="#">
-              <article class="lots__article">
+            <a class="lot__link " target="_blank" href="#">
+              <article class="lots__article lots_article-background_film">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Фильм режиссёра, который бросил киношколу</h3>
-                  <p class="lots_annotation">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                  <p class="lots_annotation">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон? </p>
                 </div>
-                <img class="lot_image" src="./images/card-lot-01.jpg" alt="Обложка лота: кадр из фильма «Лакричная пицца»">
                 <div class="overlay"></div>
               </article>
             </a>
           </li>
           <li class="lot__list__item">
             <a class="lot__link" target="_blank" href="#">
-              <article class="lots__article">
+              <article class="lots__article lots_article-background_book">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                   <p class="lots_annotation">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                 </div>
-                <img class="lot_image" src="./images/card-lot-02.jpg" alt="Обложка лота: книга «Улисс»">
                 <div class="overlay"></div>
               </article>
             </a>
           </li>
           <li class="lot__list__item">
             <a class="lot__link" target="_blank" href="#">
-              <article class="lots__article">
+              <article class="lots__article lots_article-background_picture">
                 <div class="lots_description">
                   <h3 class="lots__lot__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                  <!--тут тоже проблема - аналогичная заголовку как только переношу <span class="lots_annotation__increase_space">... </span> слово "Сколько" уползает либо у меня в самой концепции что то не так, но не пойму что, есть мысль, что так можно только когда display: inline-->
                   <p class="lots_annotation">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span class="lots_annotation__increase_space">... </span>Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 </div>
-                <img class="lot_image" src="./images/card-lot-03.jpg" alt="Обложка лота: «Картина Черное и фиолетовое»">
                 <div class="overlay"></div>
               </article>
             </a>
           </li>
         </ul>
-        <!--тут вопрос философический: ведут ли ссылки на внешние сайты? Но, ставя себя на место пользователя, мне больше нравится, когда ссылки открываются в новых вкладках-->
-        <a class="lots__list__more interactive__link" target="_blank" href="#">посмотреть больше</a>
+        <a class="lots__list__more" target="_blank" href="#">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__logo">
@@ -102,10 +95,6 @@
             Об аукционе
           </h2>
           <div class="about__content__article">
-          <!--как работать с оформлением типа <тэг1>_много_текста_<тег2>_много_текста_</тег2>_много_текста_</тег1> (со вложенными тегами внутри цельного абзаца текста) в пдф с рекомендациями нет-->
-          <!---тут без проблем переносы тегов на новые строки сработали - пока у меня одно объяснение: так можно делать пока display inline, как только тип меняется - переводы строк 
-          внутри текста становятся видны в разметке. Вновь вопрос по правилам оформления вложенных тегов внутри сплошного текста или хуже - цельного слова, является ли это исключением из общих
-          правил? Кстати, если сменить тип display, то текст в блоке ниже "разъедется" из-за переносов строк, которые использованы для оформления вложенности-->
             <p class="about__content content__increase__spacing">
               Здесь вы не встретите очередное
               <span class="reset__spacing"> пафосное собрание невероятно дорогого антиквариата. </span>
@@ -139,21 +128,21 @@
       </section>
     </main>
     <footer class="footer__main">
-      <address class="footer__address">
-        <a class="interactive__link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="interactive__link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <address class="address footer__address">
+        <a class="link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
       <nav>
         <ul class="footer__nav__menu">
           <li class="unbullited__list_item">
-            <a class="active__link" href="#">главная</a>
+            <a class="link link-active" href="#">главная</a>
           </li>
           <li class="unbullited__list_item">
-            <a class="interactive__link" href="#">посмотреть лоты</a>
+            <a class="link" href="#">посмотреть лоты</a>
           </li>
           <li class="unbullited__list_item">
-            <a class="interactive__link" href="#">об аукционе</a>
+            <a class="link" href="#">об аукционе</a>
           </li>
         </ul>
       </nav>

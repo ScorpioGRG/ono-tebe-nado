@@ -33,9 +33,6 @@
     list-style: none;
 }
 
-.active__link {
-    text-decoration: none;
-}
 
 .header__logo {
     width: 100%;
@@ -47,17 +44,27 @@
     height: 107px;
 }
 
-.interactive__link {
+.link {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
+.link-active {
+    text-decoration: none;
+}
+
 .header__address {
-    line-height: 136%;
     padding-top: 3px;
     padding-left: 193px;
-    font-style: normal;
     margin-right: 30px;
+}
+
+.address {
+    line-height: 136%;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .cover {
@@ -81,12 +88,13 @@
 }
 
 .cover__heading {
-    padding-left: 50px;
+    padding-top: 165px;
     padding-right: 50px;
-    width: 100%;
-    vertical-align: middle;
-    padding-top: 164px;
-    padding-bottom: 136px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 137px;
 }
 
 .cover__heading__main {
@@ -98,15 +106,13 @@
     color: #fff;
 }
 
-.cover__heading__special__hight__space {
-    line-height: 118%; 
-    letter-spacing: 0.25em;
+.cover__heading__special__hight {
+    line-height: 115%; 
 }
 
 .cover__heading__align__center {
     display: block;
     text-align: center;
-    line-height: 138%; 
 }
 
 .cover__heading__align__right {
@@ -185,6 +191,36 @@
     height: 100%;
 }
 
+.lots_article-background_film
+{
+    position: relative;
+    background-image: url("../images/card-lot-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.lots_article-background_book
+{
+    position: relative;
+    background-image: url("../images/card-lot-02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.lots_article-background_picture
+{
+    position: relative;
+    background-image: url("../images/card-lot-03.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
 .lots_description {
     padding-left: 40px;
     padding-right: 40px;
@@ -193,6 +229,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    
+    
 }
 
 .lots_annotation {
@@ -201,7 +240,9 @@
     line-height: 120%;
     margin-bottom:48px;
     color: #fff;
-} 
+    
+    
+}
 
 .lots_annotation__increase_space {
     letter-spacing: 0.13em;
@@ -217,15 +258,7 @@
     text-underline-offset: 3px;
     text-decoration-skip-ink: none;
     color: #fff;
-}
-
-.lot_image {
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-
+    
 }
 
 .lot__link {
@@ -233,17 +266,16 @@
     text-decoration: none;
 }
 
-
 .lots__list__more {
     font-weight: 400;
     font-size: 20px;
     color: #000;
     padding-left: 40px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .lot__list__item {
-    /*тут не совсем понял, высота по макету 563px, у меня 2 вероятные ошибки были - 560px (исправил), а вторая скорее вопрос - использование min-height, а не hight - корректно? 
-    Если много текста - карточка подрастет в высоту*/
     min-height: 563px;
 }
 
@@ -325,11 +357,6 @@
 }
 
 .footer__address {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 136%;
-    color: #000;
-    font-style: normal;
     padding-right: 130px;
 }
 
