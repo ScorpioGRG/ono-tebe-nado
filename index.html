@@ -14,15 +14,9 @@
       <nav>
         <ul class="inline__list">
           <li class="unbullited__list_item">
-            <!--теперь для всех ссылок 2 класса, link - это общее характерное нестандартное подчеркивание, link-active без подчеркивания, из общения с наставником понял, что суть замечания в том,
-            что у всех ссылок должен быть один класс, а к активным надо добавить второй, что бы у нее было 2 класса. Сокральный смысл пока не осознал, видимо, время не пришло -->
             <a class="link link-active" href="">главная</a>
           </li>
           <li class="header__nav__menu__item">
-            <!--"Классы должны подходить по смыслу. Это ссылка в хедере и это можно отразить в классе." самое сложное замечание, первая мысль - разные классы для ссылок в разных местах, но у меня всего 2 класса для всех ссылок.
-            Наплодить одинаковых классов с разными названиями - явно, не то, что нужно/требуется делать. 
-            Задал вопрос наставнику, видимо речь о том, что изначально криво назвал классы. Если дело в чем-то другом, то прошу подробнее "разжевать", пока у меня не очень получается проникаться "философией мышления" верстальщика
-            Классы переименовал, по проекту изменил везде-->
             <a class="link" href="">посмотреть лоты</a>
           </li>
           <li class="header__nav__menu__item">
@@ -33,7 +27,6 @@
       <a class="header__logo">
         <img class="header__logo__image" src="./images/logo-black.svg" alt="ОНО ТЕБЕ НАДО логотип черный"/>
       </a>
-      <!--все общее в address, специфичное в header__address-->
       <address class="address header__address">
         <a class="link content__increase__spacing" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="link content__increase__spacing" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -43,13 +36,11 @@
     <main>
       <section class="cover">
         <h1 class="cover__heading">
-          <!--одина строка в коде - одна строка в тексте, переделал на flex, параметры строк как в макете-->
           <span class="cover__heading__special__hight cover__heading__main">о<span class="cover__heading__main cover__heading__increase__space">но</span></span>
           <span class="cover__heading__align__center cover__heading__main">те<span class="cover__heading__main cover__heading__increase__space">бе</span></span>
           <span class="cover__heading__align__right cover__heading__main cover__heading__increase__space">н<span class="cover__heading__main">ад<span class="reset__spacing">о</span></span></span>
         </h1>
         <div class="cover__description">
-          <!--немного поспорю за этот span, в макете у буквы "в" по макету другой letter-spacing не как у всей строки-->
           <p class="cover__description-text">Аукцион вещей, <span class="cover__description-text__increase__spacing">в</span>которые никто не верил</p>
           <button type="button" class="bet-button">Сделать ставку</button>
         </div>
@@ -57,8 +48,6 @@
       </section>
       <section class="lots">
         <h2 class="sub__heading">Лоты</h2>
-        <!--сделал в результате фоном, не потому, что лень, а потому, что при относительном позиционировании на второй карточке (только в ней! В 1 и 3 все хорошо), где текста под завязку, вылез неожиданный эффект:
-         во второй карточке текст не прижимается в плотную к заголовку h3. Как будто justify-content: space-between - видит еще один объект. В общем, мне не нравится, что реализовано фоном, но другого рабочего решения у меня нет -->
         <ul class="lots__card-list">
           <li class="lot__list__item">
             <a class="lot__link " target="_blank" href="#">
@@ -94,7 +83,6 @@
             </a>
           </li>
         </ul>
-        <!--видимо, замечание - отсыл к неудачному именованию классу, теперь тут просто класс одинаковый для всех ссылок-->
         <a class="lots__list__more" target="_blank" href="#">посмотреть больше</a>
       </section>
       <section class="about">

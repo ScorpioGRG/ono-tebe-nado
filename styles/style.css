@@ -189,36 +189,26 @@
 .lots__article {
     width: 334px;
     height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
 }
 
 .lots_article-background_film
 {
-    position: relative;
     background-image: url("../images/card-lot-01.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .lots_article-background_book
 {
-    position: relative;
     background-image: url("../images/card-lot-02.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .lots_article-background_picture
 {
-    position: relative;
     background-image: url("../images/card-lot-03.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .lots_description {
