@@ -33,7 +33,6 @@
     list-style: none;
 }
 
-
 .header__logo {
     width: 100%;
 }
@@ -243,7 +242,6 @@
     text-underline-offset: 3px;
     text-decoration-skip-ink: none;
     color: #fff;
-    
 }
 
 .lot__link {
