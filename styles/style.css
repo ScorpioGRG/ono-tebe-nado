@@ -195,18 +195,15 @@
     z-index: 0;
 }
 
-.lots_article-background_film
-{
+.lots_article-background_film {
     background-image: url("../images/card-lot-01.jpg");
 }
 
-.lots_article-background_book
-{
+.lots_article-background_book {
     background-image: url("../images/card-lot-02.jpg");
 }
 
-.lots_article-background_picture
-{
+.lots_article-background_picture {
     background-image: url("../images/card-lot-03.jpg");
 }
 
